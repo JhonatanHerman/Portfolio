@@ -1,0 +1,451 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Poppins:wght@300;400;500&display=swap');
+
+*{
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+}
+header {
+    min-width: 1280px;
+}
+
+body{
+    min-width: 1280px;   
+    margin: 0 auto;
+    color: #1D1D1D;
+    background-color: #F6F4F1;
+}
+
+
+/*########################################     Header    ########################################*/
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    background-color: #F6F4F1;
+    width: 100%;
+    box-shadow: 0px -10px 30px black
+}
+
+header nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    padding-left: 8%;
+    padding-right: 8%;
+}
+
+header nav h1{
+    color: #003277;
+    font-size: 2.5rem;
+}
+
+header nav span{
+    color: black;
+}
+header nav ul li{
+    display: inline-block;
+    padding: 10px 25px;
+    list-style-type: none;
+}
+header nav ul li a{
+    padding: 10px;
+    font-weight: bold;
+    color: black;
+    font-size: 1.3rem;
+}
+
+header nav ul li a:hover{
+    text-shadow: 0px 0px 10px #527AF2;
+    transform: scale(1.2);
+}
+
+header nav .btn{
+    background-color: #003277;
+    color: #F6F4F1;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 25px;
+    border-radius: 15px;
+    transition: transform .4s;
+}
+
+header nav .btn:hover{
+    transform: scale(1.2);
+    box-shadow: 0px 0px 20px #527AF2;
+}
+
+/*########################################  SECTION SOBRE MIM  ########################################*/
+.section-sobre{
+    padding-top: 150px;
+    min-height: 50%;
+    align-items: center;
+}
+
+.section-sobre .retangulo {
+    min-height: 800px;
+    display: flex;
+    justify-content: space-around;
+    margin: 50px;
+    background-color: #00132E;
+    border: 2px black solid;
+    border-radius: 2rem;
+    box-shadow: 0px 3px 60px black
+}
+
+.section-sobre .retangulo div{
+    align-self: center;
+    max-width: 620px;
+    display: grid;
+    gap: 30px;
+    margin: 30px;
+}
+
+.section-sobre h2{
+    animation: inicializar .7s forwards;
+    font-family: 'Poppins';
+    font-size: 2em;
+    font-weight: 600;
+    color: #F6F4F1;
+}
+
+.section-sobre span{
+    color: #527AF2;
+}
+
+.section-sobre p{
+    font-family: 'Poppins';
+    font-weight: 200;
+    font-size: 1.5em;
+    max-width: 870px;
+    text-align: justify;
+    color: #F6F4F1;
+}
+
+.section-sobre a{
+    justify-self: center;
+    background-color: #527AF2;
+    color: #F6F4F1;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #F6F4F1;
+    padding: 10px 25px;
+    border-radius: 15px;
+    transition: transform .4s;
+}
+
+.section-sobre a:hover{
+    transform: scale(1.2);
+    box-shadow: 0px 0px 20px #527AF2;
+}
+
+.section-sobre .foto {
+    position: center;
+}
+
+.section-sobre .foto img {
+    height: 500px;
+    width: 500px;
+    border-radius: 100%;
+    
+}
+
+/*########################################   SECTION FORMACAO  ########################################*/
+.section-formacao {
+    background-color: #00132E;
+    text-align: justify; 
+    min-height: 1050px;
+}
+
+.section-formacao h2{
+    font-family: 'Poppins';
+    margin-left: 60px;
+    padding-top: 20px;
+    text-align: center;
+    font-size: 3em;
+    font-weight: 600;
+    color: #F6F4F1;
+    gap: 30px
+}
+
+.section-formacao p {
+    font-family: 'Poppins';
+    font-weight: 200;
+    font-size: 1.3em;
+    max-width: 870px;
+    text-align: justify;
+    color: #F6F4F1;
+}
+
+.bloco {
+    padding: 180px 150px 40px 150px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.imagem-uninter {
+    position: relative;
+    padding-right: 40px;
+    width: 600px;
+    height: 500px;
+    min-width: 500px;
+    min-height: 400px;
+    background-color: #00132E;
+    background-image: url(imagens/Uninter.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    box-shadow: 0px 0px 50px #527AF2;
+    
+}
+
+
+/* INICIO DECORAÇÃO DA BORDA DA IMAGEM */
+.imagem-uninter span:first-of-type{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(to right, transparent, red, orange, yellow, green, blue, cyan, white);
+    animation: animar1 2s linear infinite;
+}
+
+.imagem-uninter span:nth-of-type(2){
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 5px;
+    height: 100%;
+    background: linear-gradient(to bottom, transparent, red, orange, yellow, green, blue, cyan, white);
+    animation: animar2 2s linear infinite;
+    animation-delay: 1s;
+}
+
+.imagem-uninter span:nth-of-type(3){
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(to left, transparent, red, orange, yellow, green, blue, cyan, white);
+    animation: animar3 2s linear infinite;
+}
+
+.imagem-uninter span:last-of-type{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background: linear-gradient(to top, transparent, red, orange, yellow, green, blue, cyan, white);
+    animation: animar4 2s linear infinite;
+    animation-delay: 1s;
+}
+/* FIM DECORAÇÃO DA BORDA DA IMAGEM */
+
+.card-text {
+    font-family: 'Poppins';
+    font-size: 1.3em;
+    color: #F6F4F1;
+    padding-left: 40px;
+}
+
+/*######################################## SECTION PROJETOS ########################################*/
+.section-projetos {
+    background-color: #00132E;
+    min-height: 700px;  
+    margin: 50px;
+    box-shadow: 0px 0px 100px black;
+    border-radius: 30px;
+}
+
+.section-projetos .container2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-projetos h2 {
+    font-family: 'Poppins';
+    padding-top: 20px;
+    text-align: center;
+    font-size: 3em;
+    font-weight: 600;
+    color: #F6F4F1;
+    gap: 30px
+}
+
+.section-projetos .cards-projetos {
+    margin: 30px;
+}
+
+
+.section-projetos img {
+    border-radius: 30px;
+    transition: transform .4s;
+}
+
+.section-projetos img:hover {
+    box-shadow: 0 0 100px #527AF2;
+    transform: scale(1.1);
+}
+
+.section-projetos .texto {
+    font-family: 'Poppins';
+    font-weight: 200;
+    font-size: 1.3em;
+    max-width: 870px;
+    text-align: center;
+    color: #F6F4F1;
+}
+
+
+
+/*###############  INICIO DO RODAPE  #################*/
+.rodape {
+    min-height: 600px;
+    padding-top: 50px;
+    background-color: #00132E;
+}
+
+.rodape .formulariolado {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+}
+
+.rodape h1 {
+    font-family: 'Poppins';
+    text-align: left;
+    font-size: 3em;
+    font-weight: 600;
+    color: #F6F4F1;
+    gap: 30px
+}
+
+.rodape p {
+    text-align: left;
+    gap: 30px;
+    font-family: 'Poppins';
+    font-weight: 200;
+    font-size: 1.3em;
+    max-width: 870px;
+    color: #F6F4F1; 
+}
+
+.rodape div form {
+    min-width: 500px;
+    min-height: 500px;
+}
+
+form {
+    width: 100%;
+    max-width: 32rem;
+    font-size: 1.125rem;
+}
+
+form label,
+form input,
+form textarea,
+form button {
+    display: block;
+    width: 100%;
+}
+
+form label {
+    color: #F6F4F1;
+    line-height: 1;
+    margin-bottom: 0.5rem;
+}
+
+form input,
+form textarea {
+    font: inherit;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border: 1px solid transparent;
+    border-radius: 8px;
+}
+
+form textarea {
+    min-height: 13rem;
+    resize: vertical;
+}
+
+form button {
+    display: block;
+    padding: 1rem;
+    background: #527AF2;
+    color: #F6F4F1;
+    font: inherit;
+    text-transform: uppercase;
+    transition: transform .4s;
+}
+
+form button:hover{
+    box-shadow: 0 0 10px #527AF2;
+    background-color: rgb(59, 161, 50);
+    cursor: pointer;
+}
+
+
+
+/* ################################################ CODIGOS CSS ################################################*/
+@keyframes inicializar {
+    from {
+        opacity: 0;
+        transform: translate3d(0, -60px, 0);
+    }
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+/* INICIO ANIMAÇÂO DA BORDA DA IMAGEM UNINTER*/
+@keyframes animar1 {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+@keyframes animar2 {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(100%);
+    }
+}
+
+@keyframes animar3 {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes animar4 {
+    0% {
+        transform: translateY(100%);
+    }
+    100% {
+        transform: translateY(-100%);
+    }
+}
+/* FIM ANIMAÇÂO DA BORDA DA IMAGEM UNINTER*/

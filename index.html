@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <!--HEADER DO SITE-->
+    <header>
+        <nav class="navegacao-primaria">
+            <a href="index.html">
+                <h1>Jhonatan <span>Herman</span></h1>
+            </a>
+            <ul>
+                <li>
+                    <a href="#sobre-mim">Sobre mim</a>
+                </li>
+                <li>
+                    <a href="#formacao">Formação</a>
+                </li>
+                <li>
+                    <a href="#projetos">Projetos</a>
+                </li>
+                <li>
+                    <a href="#rodape">Contato</a>
+                </li>
+            </ul>
+            <a href="https://github.com/JhonatanHerman" target="_blank" class="btn">Github</a>
+        </nav>
+    </header>
+    <!-- FIM DO HEADER-->
+
+    <!--SEÇÃO SOBRE MIM-->
+    <section aria-label="SOBRE MIM" class="section-sobre" id="sobre-mim">
+        <div class="retangulo">
+            <div>
+                <h2 class="digitando">Olá! Meu nome é <span>Jhonatan</span> Herman...</h2>
+                <br>
+                <p>Sou estudante de Engenharia de Software na UNINTER. Tenho 20 anos, trabalho atualmente como Suporte
+                    Help Desk. Sou apaixonado pela área de programação e pelas áreas referentes à segurança de
+                    informação.</p>
+                <br>
+                <a href="pdfs/Curriculo.pdf" target="_blank">Download CV</a>
+            </div>
+            <div class="foto">
+                <img src="imagens/foto-minha.jpg" alt="minha foto">
+            </div>
+        </div>
+    </section>
+    <!-- FIM SEÇÃO SOBRE MIM-->
+
+    <!-- SEÇÃO FORMACAO-->
+    <section aria-label="Formacao" class="section-formacao" id="formacao">
+        <h2>Formação e Habilidades:</h2>
+        <div class="bloco">
+            <div class="imagem-uninter">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="card-text">
+                <P>Atualmente, sou estudante de Engenharia de Software na Insituição UNINTER. Estou no segundo semestre
+                    com previsão de término no primeiro semestre do ano de 2026.</P>
+                <p>Até o momento minhas principais habilidades são:</p>
+                <ul>
+                    <li>- Python</li>
+                    <li>- SQL</li>
+                    <li>- Java</li>
+                    <li>- HTML/CSS e JavaScript (Básico)</li>
+                    <li>- C</li>
+                    <li>- C#</li>
+                    <li>- Git e Github</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!--FIM SEÇÂO FORMAÇÂO-->
+
+    <!--SEÇÃO PROJETOS-->
+    <section aria-label="Projetos" class="section-projetos" id="projetos">
+        <h2>Projetos:</h2>
+        <div class="container2">    
+            
+            <div class="cards-projetos" id="projeto1">
+                <a href="https://github.com/JhonatanHerman/Python" target="_blank">
+                    <picture>
+                        <source media="(max-width: 1600)" srcset="imagens/python2.png">
+                        <img src="imagens/python.png" alt="python">
+                    </picture>
+                    
+                </a>
+                <p class="texto">Projetos em Python</p>
+            </div>
+            <div class="cards-projetos" id="projeto2">
+                <a href="https://github.com/JhonatanHerman/JAVA/tree/main/Projetos%20Java" target="_blank">
+                    <picture>
+                        <source media="(max-width: 1600)" srcset="imagens/java2.png">
+                        <img src="imagens/java.png" alt="java">
+                    </picture>
+                </a>
+                <p class="texto">Sistema de Cadastro em Java e MySQL</p>
+            </div>
+        </div> <!--Fim do container 2-->
+    </section>
+    <!--FIM SEÇÃO PROJETOS-->
+
+    <!--SEÇÃO RODAPE-->
+    <section class="rodape" id="rodape">
+        <div class="formulariolado">
+            <div>
+                <h1>Contato</h1>
+                <p>Whatsapp:</p>
+                <p>+55 (19) 99156-9338</p>
+                <br>
+                <p>E-Mail:</p>
+                <p><EMAIL>jhonatanheichemberger@hotmail.com</p>
+            </div>
+            <div class="divform">
+                <form action="https://formsubmit.co/jhonatanheichemberger@hotmail.com" method="post">
+                    
+                    <label for="nome">Nome:</label>
+                    <input type="texto" id="nome" name="nome_usuario" required>
+                
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email_usuario" required>
+                
+                    <label for="texto">Texto:</label>
+                    <textarea id="texto" name="texto_usuario"></textarea>
+                    
+                    <input type="hidden" name="_next" value="127.0.0.1:5500/obrigado.html">
+    
+                    <button type="submit">Enviar</button>
+                </form>
+                
+            </div>
+        </div> <!-- Fim da div lado a lado-->
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
